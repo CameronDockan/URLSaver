@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3, 
+    "name": "URL Saver", 
+    "description": "saves current tab's url to popup document",
+    "version": "1.0",
+    "permissions": ["tabs", "storage"],
+    "action": {
+        "default_icon": "images/green-informal-leaf.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "images/green-informal-leaf.png",
+        "48": "images/green-informal-leaf.png",
+        "128": "images/green-informal-leaf.png"
+    },
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "commands": {
+        "save-url": {
+          "suggested_key": {
+            "default": "Ctrl+Shift+U",
+            "mac": "Command+Shift+U"
+          },
+          "description": "Saves active URL"
+        }
+    }
+}
