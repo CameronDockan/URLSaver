@@ -62,9 +62,9 @@ body {
     /* list-style: none; */
     /* border: 1px solid aliceblue; */
     list-style-position: inside;
-
     text-indent: -27px;
     padding-left: 30px;
+    white-space: nowrap;
 }
 
 .listItem {
